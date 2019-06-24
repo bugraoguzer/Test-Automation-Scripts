@@ -44,8 +44,8 @@ if [ "$SECOUNDS" -ne 100 ];
 	do
 	   echo "capture a screenshot"
 	   echo $ekran
-	   DISPLAY=:$1 scrot 'image_'$num'.jpeg' -e 'mv $f '$path'' #I have set the most appropriate screen image format as jpeg for minimum CPU usage(lubuntu VPC).
-	   sleep 1.7
+	   DISPLAY=:10.0 scrot 'image_'$num'.jpeg' -e 'mv $f '$path'' #I have set the most appropriate screen image format as jpeg for minimum CPU usage(lubuntu VPC).
+	   sleep 1.7  ### important !! DISPLAY=:10.0 must change ! you can learn your own display value with "echo $DISPLAY"
 	   num=$((num+1)) #take screenshot process started.
 	   echo "$num"
 	   if ([ $num -gt 35 ] && ! pgrep -x "$SERVICE" >/dev/null)
