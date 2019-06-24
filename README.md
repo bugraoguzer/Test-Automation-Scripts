@@ -1,2 +1,2 @@
 # Test-Automation-Scripts
-Cute Scripts
+Cute Scripts for PERSONAL use
